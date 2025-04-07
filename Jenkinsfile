@@ -52,7 +52,7 @@ pipeline{
 stage('Build Docker Image') {
                       steps {
                           script {
-                            sh 'docker build -t azizbenhaha/spring-app:latest .'
+                            sh 'docker build -t mohamedazizbenhaha/spring-app:latest .'
                           }
                       }
                   }
