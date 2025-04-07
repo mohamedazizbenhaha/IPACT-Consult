@@ -14,8 +14,6 @@ services:
       MYSQL_ROOT_HOST: '%'
     ports:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
-    volumes:
-      - db:/var/lib/mysql
   app:
     depends_on:
       - mysqldb
