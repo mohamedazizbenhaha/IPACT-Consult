@@ -38,16 +38,15 @@ pipeline{
         }
 
 
-/*
+
         stage('Code Quality Check via SonarQube') {
             steps{
 
-             		sh "  mvn sonar:sonar -Dsonar.projectKey=cicdback -Dsonar.host.url=http://192.168.1.71:9000 -Dsonar.login=14a06bdf65b0b44ae3947bf04b44767fa5a78d1a"
+             		sh "  mvn sonar:sonar -Dsonar.projectKey=cicdback -Dsonar.host.url=http://10.0.0.10:9000 -Dsonar.login=sqp_fc0d30082de7e78f18605063bafed8cee2d404ab"
 
             }
         }
 
-*/
 
 stage('Build Docker Image') {
                       steps {
